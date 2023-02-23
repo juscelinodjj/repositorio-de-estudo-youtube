@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.loading {
+  align-items: center;
+  background: #f5f5f5;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.animation-bar {
+  background: #cfcfcf;
+  height: 2px;
+  margin-top: 22px;
+  overflow: hidden;
+  position: relative;
+  width: 150px;
+}
+
+.animation-bar::before {
+  animation: animation 1.5s infinite ease;
+  background: #0073b1;
+  content: "";
+  height: 2px;
+  left: -34px;
+  position: absolute;
+  width: 75px;
+}
+
+@keyframes animation {
+  50%{
+    left: 96px;
+  }
+}
