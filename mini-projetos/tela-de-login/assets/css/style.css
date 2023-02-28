@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.image-container {
+  background-color: #5bb4ff;
+  display: flex;
+  padding: 0 80px;
+  width: 50%;
+}
+
+.image-container img {
+  max-width: 100%;
+}
+
+.login-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.form-container {
+  width: 50%;
+}
+
+.form-container h2 {
+  color: #32324f;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container span {
+  color: #32324f;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.input-container input {
+  background-color: #ecf2f7;
+  border: none;
+  border-radius: 5px;
+  color: #32324f;
+  font-size: 17px;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.input-container input::placeholder {
+  color: #a9adb6;
+}
+
+.remember {
+  color: #32324f;
+  display: flex;
+  font-size: .87rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.remember label {
+  cursor: pointer;
+}
+
+.remember a {
+  color: #4aa4ee;
+  text-decoration: none;
+}
+.remember a:hover {
+  color: #3286ca;
+}
+
+.input-container input[type=submit] {
+  background: #4aa4ee;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+  transition: .3s;
+}
+
+.input-container input[type=submit]:hover {
+  background: #3286ca;
+}
+
+.input-container p {
+  color: #32324f;
+  text-align: center;
+}
+.input-container p a {
+  color: #4aa4ee;
+}
+
+.input-container p a:hover {
+  color: #3286ca;
+}
+
+.form-container h3 {
+  color: #607d8b;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-container .icons-container {
+  align-items: center;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+}
+
+.icons-container img {
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.icons-container img:hover {
+  transform: translateY(-5px);
+}
+
+.icons-container img:nth-child(1) {
+  margin-right: 5px;
+}
+
+.icons-container img:nth-child(2) {
+  margin-left: 5px;
+}
+
+@media (max-width: 868px) {
+  .image-container {
+    display: none;
+  }
+
+  .login-container {
+    width: 100%;
+  }
+
+  .form-container {
+    margin: 50px;
+    padding: 40px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .form-container {
+    margin: 0;
+    padding: 10px 30px;
+  }
+}
