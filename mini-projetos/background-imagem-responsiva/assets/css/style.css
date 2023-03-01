@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-image: url('../img/background.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
