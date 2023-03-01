@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #313131;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #3f3f3f;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .389);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  position: relative;
+  width: 300px;
+}
+
+.card::before {
+  border: 20px solid transparent;
+  border-right: 20px solid #00b0ff;
+  border-top: 20px solid #00b0ff;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.icon {
+  margin-bottom: 20px;
+}
+
+.icon img {
+  width: 250px;
+}
+
+.content {
+  height: 215px;
+  overflow: hidden;
+  position: relative;
+}
+
+.content::before {
+  background: linear-gradient(transparent, #3f3f3f);
+  bottom: 0;
+  content: '';
+  height: 100px;
+  position: absolute;
+  width: 100%;
+}
+
+.card.active .content {
+  height: auto;
+}
+
+.card.active .content::before {
+  visibility: hidden;
+}
+
+.content h3 {
+  color: #dedede;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.content h3::before {
+  background-color: #00b0ff;
+  border-radius: 100px;
+  bottom: 4px;
+  content: '';
+  height: 2px;
+  position: absolute;
+  width: 40px;
+}
+
+.content p {
+  color: #b7b7b7;
+  text-align: justify;
+
+}
+
+#read-button {
+  background-color: #00b0ff;
+  border: none;
+  border-radius: 2px;
+  color: #313131;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 10px;
+  transition: all .2s ease-in-out;
+}
+
+#read-button:hover {
+  background-color: transparent;
+  color: #00b0ff;
+  transition: all .2s ease-in-out;
+}
+
+.card:not(.active) #read-button::after {
+  content: ' mais';
+}
+
+.card.active #read-button::after {
+  content: ' menos';
+}
