@@ -10,3 +10,4 @@
 - [Card ler mais e menos](https://repositorio-de-estudo-youtube.netlify.app/card-ler-mais-e-menos/)
 - [Background imagem responsiva](https://repositorio-de-estudo-youtube.netlify.app/background-imagem-responsiva/)
 - [Footer](https://repositorio-de-estudo-youtube.netlify.app/footer/)
+- [Grid de imagens](https://repositorio-de-estudo-youtube.netlify.app/grid-de-imagens/)

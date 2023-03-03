@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #1e272e;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 1366px;
+  padding: 20px 10px;
+}
+
+.grid img {
+  flex-wrap: wrap;
+  height: 180px;
+  transition: 400ms;
+  width: 320px;
+}
+
+.grid img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 320px) {
+  .grid img {
+    height: 157.5px;
+    width: 280px;
+  }
+}
